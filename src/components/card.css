@@ -1,0 +1,18 @@
+.card-text {
+    display: none;
+    
+}
+
+.card:hover .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    text-transform: uppercase;
+    background-color: #98A88E;
+    border-radius: 7px;
+    color: #28352E;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+}
+

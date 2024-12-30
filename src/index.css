@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* scrollbar-width: thin; 
+  scroll-behavior: smooth;
+  scrollbar-color:#191D23 transparent; */
+  
+   
+}
+body{
+  overflow-Y: hidden;
+}
