@@ -38,7 +38,7 @@ function CardsImg() {
   };
 
   return (
-    <div
+    <div 
       ref={containerRef}
       style={{
         display: "flex",
@@ -55,46 +55,34 @@ function CardsImg() {
       onTouchStart={handleStart} // Touch start
       onTouchMove={handleMove} // Touch move
       onTouchEnd={handleEnd} // Touch end
-      className="hide-scrollbar" // Custom class to hide scrollbars
+      className="hide-scrollbar " // Custom class to hide scrollbars
     >
     
-      <div style={{ padding: "0 10px", display: "inline-block" }}>
+      <div className="card-element" >
         <Card
-          className="rounded shadow"
-          style={{ width: "16rem", height: "10rem" }}
+          className="rounded shadow single-card"
+         
         >
           <a
             href="https://invention-psi.vercel.app/"
             style={{ textDecoration: "none" }}
           >
             <div
-              style={{
-                position: "relative",
-                width: "16rem",
-                height: "10rem",
-              }}
+              
             >
               <Card.Img
-                className="rounded"
+                className="rounded card-image"
                 variant="top"
                 src={tornado3}
-                alt="Card 4"
-                style={{ width: "16rem", height: "10rem" }}
+                alt="invention"
+               
 
               />
              
             
               {/* Green Overlay */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "rgba(25, 29, 35, 0.5)", // Semi-transparent green
-                  borderRadius: "0.5rem", // Match the rounded corners
-                }}
+              <div className="greenOverlay"
+                
                
                 
               >
@@ -104,43 +92,31 @@ function CardsImg() {
           </a>
         </Card>
       </div>
-      <div style={{ padding: "0 10px", display: "inline-block" }}>
+      <div className="card-element">
         <Card
-          className="rounded shadow"
-          style={{ width: "16rem", height: "10rem" }}
+          className="rounded shadow single-card"
+          
         >
           <a
             href="https://longitude-five.vercel.app/"
             style={{ textDecoration: "none" }}
           >
             <div
-              style={{
-                position: "relative",
-                width: "16rem",
-                height: "10rem",
-              }}
+              
             >
               <Card.Img
-                className="rounded"
+                className="rounded card-image"
                 variant="top"
                 src={clock}
-                alt="Card 4"
-                style={{ width: "16rem", height: "10rem" }}
+                alt="clock"
+              
 
               />
              
             
               {/* Green Overlay */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "rgba(25, 29, 35, 0.5)", // Semi-transparent green
-                  borderRadius: "0.5rem", // Match the rounded corners
-                }}
+              <div className="greenOverlay"
+               
                
                 
               >
