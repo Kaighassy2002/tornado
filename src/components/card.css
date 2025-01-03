@@ -2,17 +2,21 @@
     padding: 0 10px;
     display: inline-block;
 }
+.card-main{
+    margin-top: 0px;
+   
+}
 
 .single-card {
-    width: 16rem;
-    height: 10rem;
-    position: relative; /* Ensure overlay and text stay inside the card */
-    overflow: hidden; /* Prevent overflow on hover */
+    width: 20rem;
+    height: 16rem;
+    position: relative; 
+    overflow: hidden; 
 }
 
 .card-image {
-    width: 16rem; /* Make image width flexible */
-    height: 10rem; /* Match card height */
+    width: 20rem;
+    height: 16rem; 
 }
 
 .greenOverlay {
@@ -23,14 +27,14 @@
     height: 100%;
     background-color: rgba(25, 29, 35, 0.5);
     border-radius: 0.5rem;
-    pointer-events: none; /* Prevent interfering with hover */
+    pointer-events: none; 
 }
 
-.card-text {
+.card-hea {
     display: none;
 }
 
-.card:hover .card-text {
+.card:hover .card-hea {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +58,8 @@
         height: 18rem;
     }
     .card-image {
-        width: 20rem; /* Match parent width */
-        height: 18rem; /* Match parent height */
+        width: 20rem; 
+        height: 18rem; 
     }
     .card-text {
         font-size: 28px;
@@ -67,16 +71,25 @@
 }
 
 @media screen and (max-width: 480px) {
+
     .single-card {
-        width: 18rem;
+        width: 16rem;
         height: 15rem;
     }
     .card-image {
-        width: 18rem;
+        width: 16rem;
         height: 15rem;
     }
-    .card-text {
-        font-size: 24px;
+    .card-hea {
+        font-size: 14px;
+        justify-content: end;
+        
+    
+    
+    }
+    .card-main{
+        margin-top: 50%px;
+       
     }
     .greenOverlay {
         width: 100%;
