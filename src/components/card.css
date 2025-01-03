@@ -74,11 +74,11 @@
 
     .single-card {
         width: 16rem;
-        height: 15rem;
+        height: 14rem;
     }
     .card-image {
         width: 16rem;
-        height: 15rem;
+        height: 14rem;
     }
     .card-hea {
         font-size: 14px;
@@ -88,7 +88,7 @@
     
     }
     .card-main{
-        margin-top: 50%px;
+        margin-top: 49%px;
        
     }
     .greenOverlay {
