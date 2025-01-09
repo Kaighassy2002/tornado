@@ -6,6 +6,7 @@ import hand from "../assets/images/hand.jpg";
 import world from "../assets/images/world.jpg";
 import president from "../assets/images/US-Presidents.webp";
 import number from "../assets/images/Picture5.jpg";
+import messi from "../assets/images/messi.jpg"
 
 import "../components/card.css";
 
@@ -57,15 +58,16 @@ function CardsImg() {
       className="hide-scrollbar " // Custom class to hide scrollbars
     >
       <div className="card-main">
-        <div className="card-element">
-          <Card className="rounded shadow single-card">
+
+      <div className="card-element">
+          <Card className="rounded  single-card">
             <a
               href="https://invention-psi.vercel.app/"
               style={{ textDecoration: "none" }}
             >
               <div>
                 <Card.Img
-                  className="rounded card-image"
+                  className="rounded  card-image"
                   variant="top"
                   src={tornado3}
                   alt="invention"
@@ -80,7 +82,7 @@ function CardsImg() {
           </Card>
         </div>
         <div className="card-element">
-          <Card className="rounded shadow single-card">
+          <Card className="rounded  single-card">
             <a
               href="https://longitude-five.vercel.app/"
               style={{ textDecoration: "none" }}
@@ -100,9 +102,8 @@ function CardsImg() {
               </div>
             </a>
           </Card>
-        </div>
-  
-        <div className="card-element">
+        </div> 
+      <div className="card-element">
           <Card className="rounded shadow single-card">
             <a
               href="https://palm-sooty-two.vercel.app/"
@@ -118,29 +119,6 @@ function CardsImg() {
   
                 <div className="greenOverlay">
                   <h4 className="card-text card-hea"> Palm
-                  </h4>
-                </div>
-              </div>
-            </a>
-          </Card>
-        </div>
-  
-        <div className="card-element">
-          <Card className="rounded shadow single-card">
-            <a
-              href="https://world-fawn.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded card-image"
-                  variant="top"
-                  src={world}
-                  alt="hand"
-                />
-  
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea">The Wonders <br /> of  the World
                   </h4>
                 </div>
               </div>
@@ -170,7 +148,29 @@ function CardsImg() {
             </a>
           </Card>
         </div>
+        <div className="card-element">
+          <Card className="rounded shadow single-card">
+            <a
+              href="https://world-fawn.vercel.app/"
+              style={{ textDecoration: "none" }}
+            >
+              <div>
+                <Card.Img
+                  className="rounded card-image"
+                  variant="top"
+                  src={world}
+                  alt="hand"
+                />
   
+                <div className="greenOverlay">
+                  <h4 className="card-text card-hea">The Wonders <br /> of  the World
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </Card>
+        </div>
+       
         <div className="card-element">
           <Card className="rounded shadow single-card">
             <a
@@ -194,6 +194,40 @@ function CardsImg() {
             </a>
           </Card>
         </div>
+
+        <div className="card-element">
+          <Card className="rounded shadow single-card">
+            <a
+              href="https://messi-two.vercel.app/"
+              style={{ textDecoration: "none" }}
+            >
+              <div>
+                <Card.Img
+                  className="rounded card-image"
+                  variant="top"
+                  src={messi}
+                  alt="hand"
+                />
+  
+                <div className="greenOverlay">
+                  <h4 className="card-text card-hea"> MESSI
+  
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </Card>
+        </div>
+
+       
+  
+        
+  
+        
+  
+        
+
+      
       </div>
     </div>
   );
