@@ -11,7 +11,7 @@ import Petra from "../assets/images/PetraJordan.jpg";
 import brazil from "../assets/images/Christ.jpg";
 import Machu from "../assets/images/Machu.jpg";
 import Chichen from "../assets/images/Chichen.jpg";
-import Roman from "../assets/images/THeRoman.jpg";
+import Roman from "../assets/images/TheRoman.jpg";
 import taj from "../assets/images/tajmahal.jpg";
 
 import "../components/wonder.css";
