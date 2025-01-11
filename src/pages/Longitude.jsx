@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../components/longitude.css";
-import longitude from "../assets/images/longitude line.jpg";
+import longitude from "../assets/images/longitudeline.jpg";
 import longitudevideo from "../assets/images/longitude-video.mp4";
 
 export default function Longitude() {

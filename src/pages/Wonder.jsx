@@ -7,12 +7,12 @@ import Halicarnassus from "../assets/images/Halicarnassus.jpg";
 import Rhodes from "../assets/images/Rhodes.jpg";
 import Alexandria from "../assets/images/Alexandria.jpg";
 import China from "../assets/images/China.jpg";
-import Petra from "../assets/images/Petra, Jordan.jpg";
+import Petra from "../assets/images/PetraJordan.jpg";
 import brazil from "../assets/images/Christ.jpg";
 import Machu from "../assets/images/Machu.jpg";
 import Chichen from "../assets/images/Chichen.jpg";
-import Roman from "../assets/images/THe Roman.jpg";
-import taj from "../assets/images/taj mahal.jpg";
+import Roman from "../assets/images/THeRoman.jpg";
+import taj from "../assets/images/tajmahal.jpg";
 
 import "../components/wonder.css";
 import { Link } from "react-router-dom";
