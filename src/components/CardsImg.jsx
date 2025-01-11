@@ -82,10 +82,7 @@ function CardsImg() {
         <div className="card-element">
           <Link to={'/longitude'}>
           <Card className="rounded  single-card">
-            <a
-              href="https://longitude-five.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
+           
               <div>
                 <Card.Img
                   className="rounded card-image"
@@ -99,7 +96,7 @@ function CardsImg() {
                   <h4 className="card-text card-hea">Longitude</h4>
                 </div>
               </div>
-            </a>
+           
           </Card>
           </Link>
          
