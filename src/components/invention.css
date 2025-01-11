@@ -1,0 +1,57 @@
+/* Base Styles */
+ *{
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    color: #000;
+}
+
+
+
+.telephone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.font-p {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.fontp2 {
+    font-size: 12px;
+    
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .font-p {
+        font-size: 10px; /* Smaller font for smaller screens */
+    }
+    .fontp2 {
+        font-size: 10px;
+    }
+    .telephone{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) { /* For mobile devices */
+    * {
+        text-align: left; /* Override to improve readability on small screens */
+    }
+    .font-p {
+        font-size: 8px;
+    }
+    .fontp2 {
+        font-size: 8px;
+    }
+    .telephone{
+        flex-wrap: wrap;
+    }
+}

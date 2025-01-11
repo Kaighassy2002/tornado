@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.president-container {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.obama-img {
+    border: 2px solid #ddd;
+    padding: 5px;
+    height: 300px;
+}
+
+h3 {
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+.footer-text{
+    font-size: 12px;
+   
+} 
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .obama-img {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    p{
+        text-align: justify;
+    }
+
+    .d-flex.gap-2 i {
+        font-size: 1.25rem;
+    }
+}

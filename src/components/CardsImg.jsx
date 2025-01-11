@@ -9,6 +9,7 @@ import number from "../assets/images/Picture5.jpg";
 import messi from "../assets/images/messi.jpg"
 
 import "../components/card.css";
+import { Link } from "react-router-dom";
 
 function CardsImg() {
   const containerRef = useRef(null); // Ref for the scrollable container
@@ -58,30 +59,28 @@ function CardsImg() {
       className="hide-scrollbar " // Custom class to hide scrollbars
     >
       <div className="card-main">
-
       <div className="card-element">
-          <Card className="rounded  single-card">
-            <a
-              href="https://invention-psi.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded  card-image"
-                  variant="top"
-                  src={tornado3}
-                  alt="invention"
-                />
-  
-                {/* Green Overlay */}
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea">invention</h4>
-                </div>
-              </div>
-            </a>
-          </Card>
+  <Card className="rounded single-card">
+    <Link to="/invention">
+      <div>
+        <Card.Img
+          className="rounded card-image"
+          variant="top"
+          src={tornado3}
+          alt="Invention"
+        />
+
+        {/* Green Overlay */}
+        <div className="greenOverlay">
+          <h4 className="card-text card-hea">Invention</h4>
         </div>
+      </div>
+    </Link>
+  </Card>
+</div>
+
         <div className="card-element">
+          <Link to={'/longitude'}>
           <Card className="rounded  single-card">
             <a
               href="https://longitude-five.vercel.app/"
@@ -102,121 +101,121 @@ function CardsImg() {
               </div>
             </a>
           </Card>
+          </Link>
+         
         </div> 
       <div className="card-element">
-          <Card className="rounded shadow single-card">
-            <a
-              href="https://palm-sooty-two.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded card-image"
-                  variant="top"
-                  src={hand}
-                  alt="hand"
-                />
-  
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea"> Palm
-                  </h4>
+         <Link to={'./palm'}>
+            <Card className="rounded shadow single-card">
+              
+                <div>
+                  <Card.Img
+                    className="rounded card-image"
+                    variant="top"
+                    src={hand}
+                    alt="hand"
+                  />
+    
+                  <div className="greenOverlay">
+                    <h4 className="card-text card-hea"> Palm
+                    </h4>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Card>
+             
+            </Card>
+         </Link>
         </div>
         <div className="card-element">
-          <Card className="rounded shadow single-card">
-            <a
-              href="https://presidents-five.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded card-image"
-                  variant="top"
-                  src={president}
-                  alt="hand"
-                />
-  
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea"> Presidents
-  
-                  </h4>
+        <Link to={'./president'}>
+            <Card className="rounded shadow single-card">
+              
+                <div>
+                  <Card.Img
+                    className="rounded card-image"
+                    variant="top"
+                    src={president}
+                    alt="hand"
+                  />
+    
+                  <div className="greenOverlay">
+                    <h4 className="card-text card-hea"> Presidents
+    
+                    </h4>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Card>
+              
+            </Card>
+        </Link>
         </div>
         <div className="card-element">
-          <Card className="rounded shadow single-card">
-            <a
-              href="https://world-fawn.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded card-image"
-                  variant="top"
-                  src={world}
-                  alt="hand"
-                />
-  
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea">The Wonders <br /> of  the World
-                  </h4>
+         <Link to={'./wonder'}>
+            <Card className="rounded shadow single-card">
+              
+                <div>
+                  <Card.Img
+                    className="rounded card-image"
+                    variant="top"
+                    src={world}
+                    alt="hand"
+                  />
+    
+                  <div className="greenOverlay">
+                    <h4 className="card-text card-hea">The Wonders <br /> of  the World
+                    </h4>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Card>
+              
+            </Card>
+         </Link>
         </div>
        
         <div className="card-element">
-          <Card className="rounded shadow single-card">
-            <a
-              href="https://number-theory-rho.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded card-image"
-                  variant="top"
-                  src={number}
-                  alt="hand"
-                />
-  
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea"> Number <br /> theory
-  
-                  </h4>
+          <Link to={'./numberTheory'}>
+            <Card className="rounded shadow single-card">
+             
+                <div>
+                  <Card.Img
+                    className="rounded card-image"
+                    variant="top"
+                    src={number}
+                    alt="hand"
+                  />
+    
+                  <div className="greenOverlay">
+                    <h4 className="card-text card-hea"> Number <br /> theory
+    
+                    </h4>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Card>
+              
+            </Card>
+          </Link>
         </div>
 
         <div className="card-element">
-          <Card className="rounded shadow single-card">
-            <a
-              href="https://messi-two.vercel.app/"
-              style={{ textDecoration: "none" }}
-            >
-              <div>
-                <Card.Img
-                  className="rounded card-image"
-                  variant="top"
-                  src={messi}
-                  alt="hand"
-                />
-  
-                <div className="greenOverlay">
-                  <h4 className="card-text card-hea"> MESSI
-  
-                  </h4>
+          <Link to={'./messi'}>
+            <Card className="rounded shadow single-card">
+              <a
+                href="https://messi-two.vercel.app/"
+                style={{ textDecoration: "none" }}
+              >
+                <div>
+                  <Card.Img
+                    className="rounded card-image"
+                    variant="top"
+                    src={messi}
+                    alt="hand"
+                  />
+    
+                  <div className="greenOverlay">
+                    <h4 className="card-text card-hea"> MESSI
+    
+                    </h4>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Card>
+              </a>
+            </Card>
+          </Link>
         </div>
 
        

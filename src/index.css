@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  /* scrollbar-width: thin; 
+  scrollbar-width: thin; 
   scroll-behavior: smooth;
-  scrollbar-color:#191D23 transparent; */
-  
+  scrollbar-color:#191D23 transparent;
+  color: #000;
+  font-family: "Hanken Grotesk", serif;
+
    
 }
-body{
-  overflow-Y: hidden;
+.navbar {
+    text-decoration: none;
+    color: #000;
 }
