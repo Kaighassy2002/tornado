@@ -18,7 +18,7 @@ export default function Messi() {
   }, []);
 
   return (
-    <div style={{backgroundImage:'linear-gradient(to right, #d7d2cc 0%, #304352 100%)'}}>
+    <div style={{backgroundImage:" linear-gradient(to top, #09203f 0%, #537895 100%)"}} className='body'>
        <div className="container">
         <div className="d-flex justify-content-between align-items-center">
             <Link className='navbar' to={'/'}>MESSI</Link>
@@ -60,11 +60,11 @@ export default function Messi() {
                 </p>
             </div>
             <div className="col-md-4">
-                <p className="paragraph-sub text-light">His first-team debut in 2004 was the start of a remarkable transformation for Barcelona. Over the next few years, Messi became the club's heartbeat, leading them to unparalleled success. Between 2004 and 2014, he helped secure multiple La Liga titles and UEFA Champions League trophies, including a historic treble in the 2008-09 season under Pep Guardiola. In this period, he also scored 91 goals in a calendar year, surpassing Gerd Müller's long-standing record.
+                <p className="paragraph-sub text-light">His first-team debut in 2004 was the start of a remarkable transformation for Barcelona. Over the next few years, Messi became the club's heartbeat, leading them to unparalleled success. Between <span className="fw-bold text-light">2004 and 2014</span>, he helped secure multiple La Liga titles and UEFA Champions League trophies, including a historic treble in the 2008-09 season under Pep Guardiola. In this period, he also scored 91 goals in a calendar year, surpassing Gerd Müller's long-standing record.
                 </p>
             </div>
             <div className="col-md-4">
-                <p className="paragraph-sub text-light">From 2014 to 2021, Messi continued his dominance, adapting his style to become a playmaker while still delivering breathtaking goals. His move to Paris Saint-Germain in 2021 ended his nearly two-decade association with Barcelona, marking a new chapter in his storied career.
+                <p className="paragraph-sub text-light">From 2014 to 2021, Messi continued his dominance, adapting his style to become a playmaker while still delivering breathtaking goals. His move to Paris Saint-Germain in 2021 ended his <span className="fw-bold text-light">nearly two-decade</span> association with Barcelona, marking a new chapter in his storied career.
                 </p>
             </div>
         </div>
@@ -83,11 +83,11 @@ export default function Messi() {
             The crowning moment came in 2022 when Messi guided Argentina to win football's most coveted prize. His performances throughout the tournament were a masterclassName in leadership and skill, cementing his place as one of the greatest players in history.
         </p>
         <p  className='text-light'>
-            The bond between Lionel Messi and Diego Maradona transcends generations. As Messi emerged as Argentina's footballing torchbearer, Maradona consistently praised him, calling him a "unique talent." Their shared legacy is deeply cherished, with Messi often paying tribute to Maradona's influence on his career and Argentine football as a whole.
+            The bond between Lionel Messi and <span className="fw-bold text-light">Diego Maradona</span> transcends generations. As Messi emerged as Argentina's footballing torchbearer, Maradona consistently praised him, calling him a "unique talent." Their shared legacy is deeply cherished, with Messi often paying tribute to Maradona's influence on his career and Argentine football as a whole.
 
         </p>
         <p  className='text-light'>
-            When Messi broke the record for most goals at a single club, Pelé, renowned for his three World Cup victories, publicly acknowledged the achievement, calling it a "beautiful journey." This recognition bridged two eras of football greatness, uniting two players who defined excellence.
+            When Messi broke the record for most goals at a single club, <span className="fw-bold text-light">Pelé</span>, renowned for his three World Cup victories, publicly acknowledged the achievement, calling it a "beautiful journey." This recognition bridged two eras of football greatness, uniting two players who defined excellence.
 
         </p>
         <p  className='text-light'>
@@ -99,7 +99,7 @@ export default function Messi() {
 
         </p>
         <p  className='text-light'>
-            Ronaldinho, the Brazilian star who mentored Messi at Barcelona, recognized his brilliance early on. Ronaldinho famously assisted Messi's first senior goal and later called him "the greatest player of all time."
+           <span className="fw-bold text-light"> Ronaldinho</span>, the Brazilian star who mentored Messi at Barcelona, recognized his brilliance early on. Ronaldinho famously assisted Messi's first senior goal and later called him "the greatest player of all time."
 
         </p>
       </section>
@@ -112,7 +112,7 @@ export default function Messi() {
 
         </p>
         <p  className='text-light'>
-            Messi's career is best understood through its remarkable phases. From 2004 to 2014, he was Barcelona's talisman, redefining modern football with his extraordinary skills. The period from 2014 to 2024 saw him evolve further, achieving international glory and adapting to new challenges at PSG.
+            Messi's career is best understood through its remarkable phases. From <span className="fw-bold text-light">2004 to 2014</span>, he was Barcelona's talisman, redefining modern football with his extraordinary skills. The period from<span className="fw-bold text-light"> 2014 to 2024</span> saw him evolve further, achieving international glory and adapting to new challenges at PSG.
 
         </p>
       </section>

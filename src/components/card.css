@@ -1,98 +1,120 @@
+
+.card-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0 ;
+  padding: 0px 9px 25px 20px;
+  animation: scroll 40s linear infinite, rotate 60s linear infinite;
+  will-change: transform;
+  animation-play-state: running;
+  
+}
 .card-element {
     padding: 0 10px;
-    display: inline-block;
-}
-.card-main{
-    margin-top: 0px;
+    list-style: none;
+    
    
+  }
+
+.card-main:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .single-card {
-    width: 16rem;
-    height: 16rem;
-    position: relative; 
-    overflow: hidden; 
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  transition: box-shadow 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.single-card:hover {
+  box-shadow: 0px 1px 5px -3px #000;
+  transform: scale(1.09);
 }
 
 .card-image {
-    width: 16rem;
-    height: 16rem; 
+  width: 10rem;
+  height: 10rem;
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .greenOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(37, 49, 39, 0.5);
-    border-radius: 0.5rem;
-    pointer-events: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 49, 39, 0.5);
+  border-radius: 0.5rem;
+  pointer-events: none;
 }
 
 .card-hea {
-    display: none;
+  display: none;
 }
 
 .card:hover .card-hea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-transform: uppercase;
-    background-color: #98A88E;
-    border-radius: 7px;
-    color: #28352E;
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  background-color: #98a88e;
+  border-radius: 7px;
+  color: #28352e;
+  font-size: 16px;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", Verdana, sans-serif; */
+  animation-play-state: paused;
 }
 
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 769px) {
-    .single-card {
-        width: 20rem;
-        height: 18rem;
-    }
-    .card-image {
-        width: 20rem; 
-        height: 18rem; 
-    }
-    .card-text {
-        font-size: 28px;
-    }
-    .greenOverlay {
-        width: 100%;
-        height: 100%;
-    }
+  
+  .card-text {
+    font-size: 28px;
+  }
+  .greenOverlay {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
-    .single-card {
-        width: 15rem;
-        height: 13rem;
-    }
-    .card-image {
-        width: 15rem;
-        height: 13rem;
-    }
-    .card-hea {
-        font-size: 14px;
-        justify-content: end;
-        
-    
-    
-    }
-    .card-main{
-        margin-top: 48%px;
-       
-    }
-    .greenOverlay {
-        width: 100%;
-        height: 100%;
-    }
+  .single-card {
+    width: 12rem;
+    height: 12rem;
+  }
+  .card-image {
+    width: 12rem;
+    height: 12rem;
+  }
+  .card-hea {
+    font-size: 14px;
+    justify-content: end;
+  }
+  
+  .greenOverlay {
+    width: 100%;
+    height: 100%;
+  }
 }

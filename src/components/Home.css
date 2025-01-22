@@ -11,9 +11,9 @@
 
 .home-title {
     height: 59vh;
-    font-family: 'DM Serif Text', serif;
+    font-family: "Bona Nova SC", serif;
     letter-spacing: 3.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(184, 245, 207, 0.827);
     color: #8E9271;
     font-size: 7rem;
     display: flex;
@@ -41,10 +41,10 @@
         justify-content: left;
         align-items: start;
         font-size: 30px;
-        letter-spacing: 1rem;
+        letter-spacing: .4rem;
         height: 50vh; 
         padding: 0 1rem; 
-        margin-top: 25%;
+        margin-top: 20%;
         font-weight: 800;
     }
 }

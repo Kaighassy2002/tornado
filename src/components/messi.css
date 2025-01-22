@@ -4,6 +4,10 @@
     box-sizing: border-box; 
     
 }
+.body {
+    transform: scaleX(-1); /* Flips the page horizontally */
+    direction: rtl;        /* Adjusts text flow to align correctly */
+}
 
 .heading{
     font-size: 24px;
@@ -13,7 +17,7 @@
 }
 
 .manin-section {
-    margin-left: -5%;
+    margin-right: -5%;
 }
 
 

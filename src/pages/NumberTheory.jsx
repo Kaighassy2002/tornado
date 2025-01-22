@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function NumberTheory() {
   return (
-    <div className='body'>
+    <div className='bodyN'>
        <div >
       <section>
         
