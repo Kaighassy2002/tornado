@@ -1,5 +1,5 @@
 import React from 'react'
-
+import carmichael from "../assets/images/Picture10.jpg";
 import "../components/number.css";
 import { Link } from 'react-router-dom';
 
@@ -41,15 +41,15 @@ export default function NumberTheory() {
       <div className="number-img2">
   
       </div>
-  
-      <section className="number-carmichael">
-        
-        <img className="carmichael-img" src="./images/Picture10.jpg" alt=""/>
-  <div className="p-3">
-          <h3 className='text-dark'>
+      <h3 className='text-dark text-center mt-5'>
             The Carmichael Numbers
     
           </h3>
+      <section className="number-carmichael">
+      
+        <img className="carmichael-img" src={carmichael} alt=""/>
+  <div className="p-3">
+          
           <p>
             One of Carmichael's most renowned contributions is his identification and study of a special className of numbers now known as Carmichael numbers. These numbers are composite (not prime) but exhibit prime-like behavior in specific mathematical tests, making them both deceptive and fascinating.
     

@@ -25,7 +25,7 @@ function App() {
       <Route path='/wonder' element={<Wonder/>}/>
       <Route path='/numberTheory' element={<NumberTheory/>}/>
       <Route path='/messi' element={<Messi/>}/>
-      {/* <Route path='/*' element={<Navigate to={'/'}/>}/> */}
+      <Route path='/*' element={<Navigate to={'/'}/>}/>
       </Routes>
      </div>
     </>
