@@ -132,6 +132,7 @@
 @media screen and (max-width: 480px) {
   .card-main{
     margin-top: 5rem;
+    overflow-y: hidden;
   }
   .single-card{
     height: 9rem;

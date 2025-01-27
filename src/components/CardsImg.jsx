@@ -78,7 +78,7 @@ function CardsImg() {
             </Card>
           </li>
   
-          <li className="card-element ">
+          <li className="card-element  me-5">
             <Link to={"/longitude"}>
               <Card className="rounded  single-card">
                 <div>
@@ -97,7 +97,7 @@ function CardsImg() {
               </Card>
             </Link>
           </li>
-          <li className="card-element ">
+          <li className="card-element ms-5 ">
             <Link to={"./palm"}>
               <Card className="rounded shadow single-card">
                 <div>
