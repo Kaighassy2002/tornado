@@ -34,13 +34,13 @@
 @media screen and (max-width: 480px) { 
     .section {
         background-attachment: fixed;
-        background-image: url(../assets//images/new1.jpg);
+        background-image: url(../assets/images/tornado.jpg);
         
     }
     .home-title {
-        justify-content: left;
+        justify-content: center;
         align-items: start;
-        font-size: 30px;
+        font-size: 50px;
         letter-spacing: .4rem;
         height: 50vh; 
         padding: 0 1rem; 

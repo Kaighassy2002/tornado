@@ -73,9 +73,25 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(37, 49, 39, 0.5);
+  background-color: rgba(59, 77, 62, 0.5);
   border-radius: 0.5rem;
   pointer-events: none;
+}
+.card-colr{
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.line{
+  width: 20%; 
+  margin: 90% auto 0px auto; /* Center align */
+ 
+  border: none;
+  border-radius: 1rem;
+  border-top: 5px solid #f8f8f8; 
+}
+.line2{
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 .card-hea {
@@ -114,6 +130,17 @@
 }
 
 @media screen and (max-width: 480px) {
+  .card-main{
+    margin-top: 5rem;
+  }
+  .single-card{
+    height: 9rem;
+    width: 9rem;
+  }
+  .card-image{
+    height: 9rem;
+    width: 9rem;
+  }
  
   .card-hea {
     font-size: 14px;

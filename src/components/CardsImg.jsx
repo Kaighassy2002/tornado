@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Card } from "react-bootstrap";
-import clock from "../assets/images/3.png";
+import clock from "../assets/images/4clock.jpeg";
 import tornado3 from "../assets/images/inavation.jpg";
 import hand from "../assets/images/hand.jpg";
 import world from "../assets/images/world.jpg";
@@ -57,7 +57,7 @@ function CardsImg() {
       onTouchMove={handleMove} // Touch move
       onTouchEnd={handleEnd} // Touch end
       >
-        <ul className="card-main " style={{ display: "flex", padding: 0, margin: 0 }}>
+        <ul className="card-main " style={{ display: "flex", padding: 0}}>
           <li className="card-element">
             <Card className="rounded single-card">
               <Link to="/invention">
@@ -70,7 +70,7 @@ function CardsImg() {
                   />
   
                   {/* Green Overlay */}
-                  <div className="greenOverlay">
+                  <div className="greenOverlay card-colr">
                     <h4 className="card-text card-hea">Invention</h4>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ function CardsImg() {
                   />
   
                   {/* Green Overlay */}
-                  <div className="greenOverlay">
+                  <div className="greenOverlay card-colr">
                     <h4 className="card-text card-hea">Longitude</h4>
                   </div>
                 </div>
@@ -107,9 +107,10 @@ function CardsImg() {
                     src={hand}
                     alt="hand"
                   />
-  
+                   
                   <div className="greenOverlay">
                     <h4 className="card-text card-hea"> Palm</h4>
+                    <hr className="line"/>
                   </div>
                 </div>
               </Card>
@@ -128,6 +129,10 @@ function CardsImg() {
   
                   <div className="greenOverlay">
                     <h4 className="card-text card-hea"> Presidents</h4>
+                    <div className="line2">
+                      <hr className="line"/>
+                      <hr className="line"/>
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -148,6 +153,7 @@ function CardsImg() {
                     <h4 className="card-text  card-hea">
                       The Wonders of the World
                     </h4>
+                    <hr className="line"/>
                   </div>
                 </div>
               </Card>
@@ -168,8 +174,13 @@ function CardsImg() {
                   <div className="greenOverlay">
                     <h4 className="card-text card-hea">
                       {" "}
-                      Number <br /> theory
+                      Number theory
                     </h4>
+                    <div className="line2">
+                      <hr className="line"/>
+                      <hr className="line"/>
+                      <hr className="line"/>
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -190,6 +201,10 @@ function CardsImg() {
   
                     <div className="greenOverlay body">
                       <h4 className="card-text card-hea"> MESSI</h4>
+                      <div className="line2">
+                      <hr className="line"/>
+                      <hr className="line"/>
+                    </div>
                     </div>
                   </div>
                 
