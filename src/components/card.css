@@ -2,17 +2,27 @@
 .card-main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin: 0 ;
-  padding: 0px 9px 25px 20px;
-  animation: scroll 40s linear infinite, rotate 60s linear infinite;
-  will-change: transform;
-  animation-play-state: running;
+  padding: 0px 10px 25px 10px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   
 }
+.card-main::-webkit-scrollbar {
+  display: none; 
+}
+.cards-scroll {
+  display: flex;
+  gap: 10px;
+  
+}
+
 .card-element {
-    padding: 0 10px;
+  flex: 0 0 auto;
+    padding:  10px;
     list-style: none;
     
    
@@ -32,8 +42,8 @@
 }
 
 .single-card {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -43,16 +53,20 @@
 
 .single-card:hover {
   box-shadow: 0px 1px 5px -3px #000;
-  transform: scale(1.09);
+  transform: scale(1.1);
 }
 
 .card-image {
-  width: 10rem;
-  height: 10rem;
-  transition: all 0.3s ease-in-out;
+  width: 12rem;
+  height: 12rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   object-fit: cover;
 }
 
+.card-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
 .greenOverlay {
   position: absolute;
   top: 0;
@@ -83,7 +97,7 @@
   border-radius: 7px;
   color: #28352e;
   font-size: 16px;
-  /* font-family: "Lucida Sans", "Lucida Sans Regular", Verdana, sans-serif; */
+
   animation-play-state: paused;
 }
 
@@ -100,14 +114,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .single-card {
-    width: 12rem;
-    height: 12rem;
-  }
-  .card-image {
-    width: 12rem;
-    height: 12rem;
-  }
+ 
   .card-hea {
     font-size: 14px;
     justify-content: end;

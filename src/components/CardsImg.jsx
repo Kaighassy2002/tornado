@@ -13,44 +13,30 @@ import { Link } from "react-router-dom";
 function CardsImg() {
   const cardsRef = useRef(null);
 
-  useEffect(() => {
-    const cards = cardsRef.current;
-    const cardsList = cards.querySelector(".card-main");
-    const allCards = Array.from(cardsList.children);
+  let startX = 0; // Starting X position of the drag
+  let scrollLeft = 0; // Starting scroll position
+  let isDragging = false; // Track if dragging is active
 
-    // speed controll
+  const handleStart = (e) => {
+    const container = cardsRef.current;
+    isDragging = true; // Activate dragging
+    startX = e.type === "touchstart" ? e.touches[0].pageX : e.pageX; // Get initial X
+    scrollLeft = container.scrollLeft; // Get initial scroll position
+  };
 
-    let scrollSpeed = 1;
-    let animationFrameId;
+  const handleMove = (e) => {
+    if (!isDragging) return;
+    const x = e.type === "touchmove" ? e.touches[0].pageX : e.pageX;
+    const distance = x - startX;
+    cardsRef.current.scrollLeft = scrollLeft - distance;
+  };
 
-    // Duplicate cards
-    const duplicateCards = () => {
-      allCards.forEach((card) => {
-        const cardClone = card.cloneNode(true);
-        cardsList.appendChild(cardClone);
-      });
-    };
+  const handleEnd = () => {
+    isDragging = false; // Deactivate dragging
+  };
 
-    // scrolling
-
-    const startScrolling = () => {
-      if (cards.scrollLeft >= cardsList.scrollWidth / 2) {
-        // When reaching the duplicated set, reset to the start of the original set
-        cards.scrollLeft = 0;
-      }
-      cards.scrollLeft += scrollSpeed; // Increment the scroll position
-      animationFrameId = requestAnimationFrame(startScrolling);
-    };
-
-    // Duplicate cards and scrolling
-    duplicateCards();
-    animationFrameId = requestAnimationFrame(startScrolling);
-
-    // Cleanup on unmount
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
+  
+  
 
   return (
    <div className="cards-containe">
@@ -58,10 +44,18 @@ function CardsImg() {
         ref={cardsRef}
         style={{
           display: "flex",
-          overflow: "hidden", 
+          overflow: "auto", 
           padding: "10px",
           scrollBehavior: "smooth",
+          scrollbarWidth: "none",
+          cursor: isDragging ? "grabbing" : "grab",
         }}
+        className="cards-scroll"
+        onMouseMove={handleMove} // Mouse move
+      onMouseLeave={handleEnd} // End drag if mouse leaves container
+      onTouchStart={handleStart} // Touch start
+      onTouchMove={handleMove} // Touch move
+      onTouchEnd={handleEnd} // Touch end
       >
         <ul className="card-main " style={{ display: "flex", padding: 0, margin: 0 }}>
           <li className="card-element">
