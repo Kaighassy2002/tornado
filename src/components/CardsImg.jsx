@@ -109,7 +109,7 @@ function CardsImg() {
                   />
                    
                   <div className="greenOverlay">
-                    <h4 className="card-text card-hea"> Palm</h4>
+                    <h4 className="card-text card-hea green"> Palm</h4>
                     <hr className="line"/>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ function CardsImg() {
   
                   <div className="greenOverlay">
                     <h4 className="card-text card-hea"> Presidents</h4>
-                    <div className="line2">
+                    <div className="line2 ">
                       <hr className="line"/>
                       <hr className="line"/>
                     </div>
