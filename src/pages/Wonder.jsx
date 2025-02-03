@@ -321,7 +321,7 @@ export default function Wonder() {
             These wonders, whether natural or man-made, connect us to our shared
             past while inspiring future generations. As custodians of this
             heritage, we bear the responsibility to preserve them, ensuring
-            their stories continue to captivate and educate.
+            their stories continue to captivate and educate
           </p>
         </div>
       </div>
