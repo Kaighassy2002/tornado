@@ -315,13 +315,7 @@ export default function Wonder() {
 
         <div>
           <p>
-            The grouping of seven is no coincidence. It resonates through
-            culture and history. Think of the seven days of the{" "}
-            <span className="fw-bold">week</span>, the seven{" "}
-            <span className="fw-bold">seas</span>, or even the seven{" "}
-            <span className="fw-bold">continents</span>. There's something
-            universal and complete about this number, which is why it often
-            appears in lists celebrating greatness.
+          It took <span className="fw-bold">week</span>s of planning and the efforts of people from across <span className="fw-bold">continents</span> to build these Wonders of the World.
           </p>
           <p>
             These wonders, whether natural or man-made, connect us to our shared

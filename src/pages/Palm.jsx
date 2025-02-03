@@ -58,7 +58,7 @@ export default function Palm() {
             </div>
             <div class="col-md-6">
                 <h3 className='text-dark'>The Quintessential Connection</h3>
-                <p>The palm also holds a special place in ancient traditions and modern science. From counting systems to mystical interpretations, its structure has always intrigued humanity. Did you know that some cultures associate it with the elemental <span className="fw-bold ">quintet—earth</span>, water, fire, air, and spirit?</p>
+                <p>The palm also holds a special place in ancient traditions and modern science. From counting systems to mystical interpretations, its structure has always intrigued humanity. Did you know that some cultures associate it with the elemental <span className="fw-bold ">quintet</span>—earth, water, fire, air, and spirit?</p>
                 <p>The symmetry and balance of the palm echo the significance of this mysterious number in art, music, and even nature. Whether it's the petals of certain flowers or the proportions of a starfish, this number appears in some of the most harmonious designs in the world.</p>
             </div>
         </section>
